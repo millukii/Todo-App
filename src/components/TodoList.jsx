@@ -14,7 +14,7 @@ const TodoList = () => {
       {data.todos.map((todo) => {
        return (
         <div key={todo.id}>
-          {todo.text} - {todo.done} - {todo.userId}
+          {todo.id}- {todo.text} - {todo.done.toString()} - {todo.user.name}
         </div>
         )
       })
